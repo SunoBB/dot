@@ -5,7 +5,7 @@ chosen=$(printf "  Power Off\n  Restart\n  Lock\n  Sleep" | rofi -dm
 case "$chosen" in
 	"  Power Off") systemctl poweroff ;;
 	"  Restart") systemctl reboot ;;
-	"  Lock") slock ;;
+	"  Lock") ;;
 	"  Sleep") systemctl suspend ;;
 	*) exit 1 ;;
 esac
