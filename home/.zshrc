@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="xiong-chiamiov"
+# ZSH_THEME="test1"
+ZSH_THEME="pacman"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,6 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+
+fpath=(~/.zsh/zsh-completions/src $fpath)
+plugins=(zsh-autosuggestions)
+
+
 alias panes="colorscript -e 34"
 
 
@@ -114,18 +120,23 @@ ibus-daemon -drx
 export PATH=$PATH:/home/suno/.spicetify
 
 export WORKON_HOME=~/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+# source /usr/bin/virtualenvwrapper.sh
 # source /usr/bin/virtualenvwrapper_lazy.sh
 
 
 
 alias suno="figlet suno | lolcat -r"
 alias lock="systemctl suspend && betterlockscreen -l dimblur"
+alias py="python"
 
 
 # alias lock="betterlockscreen -l blur"
 alias clock="tty-clock -c -s -C 4"
 POWERLEVEL9K_MODE='nerdfont-complete'
-source  ~/powerlevel9k/powerlevel9k.zsh-theme
-POWERLEVEL9K_MODE='nerdfont-complete'
-source  ~/powerlevel9k/powerlevel9k.zsh-theme
+# source  ~/powerlevel9k/powerlevel9k.zsh-theme
+# POWERLEVEL9K_MODE='nerdfont-complete'
+# source  ~/powerlevel9k/powerlevel9k.zsh-theme
+source /home/suno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

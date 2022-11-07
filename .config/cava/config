@@ -108,11 +108,12 @@
 # not able to restore color definitions on exit, simply restart your terminal to restore colors.
  gradient = 1
  gradient_count = 2
- gradient_color_1 =  '#654F54'
+ gradient_color_1 =  '#90A7B9'
  gradient_color_2 = '#8C8D90'
 
 
-
+image_source=
+image_source="/home/suno/dot/.config/.config/neofetch/ascii/moon.txt"
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.

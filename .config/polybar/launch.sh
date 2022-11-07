@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#!/bin/bash
+
 # Terminate already running bar instances
 killall -q polybar
 
@@ -17,20 +19,7 @@ done
 # done
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload main &
+    MONITOR=$m polybar --reload mainbar &
 done
-# for m in $(polybar --list-monitors | cut -d":" -f1); do
-#     MONITOR=$m polybar --reload bottom &
-# done
 
-# Launch Polybar, using default config location ~/.config/polybar/config
-# polybar main --config=~/.config/polybar/config.ini &
-# polybar doopy --config=~/.config/polybar/config.ini &
-# polybar bottom --config=~/.config/polybar/config.ini &
 echo "Polybar launched..." &
-
-
-# ./get_spotify_status.sh &
-# ./scroll_spotify_status.sh &
-
-echo "Modules Launched"

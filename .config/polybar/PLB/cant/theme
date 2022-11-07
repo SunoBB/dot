@@ -1,0 +1,22 @@
+[colors]
+background = #181926
+background-alt = #24273a
+background-75 = #0024273a
+tray = #5b6078
+foreground = #cad3f5
+
+primary = #c6a0f6
+secondary = #8aadf4
+
+alert = #d20f39
+disabled = #a5adcb
+
+
+rose	=	#ee99a0
+orange	=	#f5a97f
+yellow	=	#eed49f
+lime 	= 	#c3da83
+green 	= 	#a6da95
+cyan 	=	#7dc4e4
+blue	=	#8aadf4
+purple 	= 	#c6a0f6
