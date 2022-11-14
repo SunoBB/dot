@@ -18,7 +18,7 @@
 ![Preview image](background/preview/_029.jpg)
  
  ## 🎉 CREDITS
- - [craftzdog](https://github.com/NvChad/NvChad) - Neovim
+ - [NvChan](https://github.com/NvChad/NvChad) - Neovim
  - [Boku](https://github.com/Spaxly/BSPWM-Config) -Bar
  <!-- - [HynDuf7](https://github.com/HynDuf7/dotfiles) - Colors -->
  <!-- - [VnPower](https://codeberg.org/VnPower/dotfiles) - His dotfile helpful most -->
