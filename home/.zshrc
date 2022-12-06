@@ -107,12 +107,9 @@ fpath=(~/.zsh/zsh-completions/src $fpath)
 plugins=(zsh-autosuggestions)
 
 
-alias panes="colorscript -e 34"
-
 
 
 export GTK_IM_MODULE=ibus: warning
-
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 ibus-daemon -drx
@@ -124,19 +121,25 @@ export WORKON_HOME=~/.virtualenvs
 # source /usr/bin/virtualenvwrapper_lazy.sh
 
 
+# Keyword
 
+alias panes="colorscript -e 34"
 alias suno="figlet suno | lolcat -r"
 alias lock="systemctl suspend && betterlockscreen -l dimblur"
 alias py="python"
-
-
-# alias lock="betterlockscreen -l blur"
+alias vim='nvim'
 alias clock="tty-clock -c -s -C 4"
+# alias lock="betterlockscreen -l blur"
+
+
+
+
 POWERLEVEL9K_MODE='nerdfont-complete'
 # source  ~/powerlevel9k/powerlevel9k.zsh-theme
 # POWERLEVEL9K_MODE='nerdfont-complete'
 # source  ~/powerlevel9k/powerlevel9k.zsh-theme
 source /home/suno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+python -u "/home/suno/Caculator/Date/Check_date.py"
