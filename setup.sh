@@ -1,9 +1,69 @@
 
 
-sudo pacman -S git thunar adobe-source-code-pro-fonts material-gtk-theme arandr feh thunar rofi spotify ttf-font-awesome visual-studio-code-bin gotop htop picom flameshot playerctl picom-pijulius-git zsh tty-clock-git i3status lxappearance ttf-fira-code tk bluez bluez-utils pulseaudio-bluetooth 
-yay -S zsh-autosuggestions zip github-desktop-bin bzip2 eww ttf-material-design-icons-extended adobe-source-code-pro-fonts  wps-office  python-wxpython termcolor figlet otf-japanese-radicals-font ttf-jetbrains-mono nerd-fonts-jetbrains-mono ttf-material-icons-git ncmpcpp ranger yay -S brightness-controller-git python-pip 
+# Git
+git
+github-desktop-bin
+
+# 
+thunar
+feh
+rofi
+neovim
+
+# App
+visual-studio-code-bin
+spotify
+flameshot
+wps-office
+brightness-controller-git
+discord
+
+# Unzip file
+zip
+bzip2
+
+# 
+material-gtk-theme
+lxappearance
+
+
+
+
+# for rice
+gotop
+htop
+ncmpcpp
+figlet
+ranger
+playerctl
+tty-clock-git
+i3status
+git clone https://github.com/jaseg/lolcat.git\ncd lolcat\nmake && sudo make install
+
+
+picom-pijulius-git / picom
+
+# font
+ttf-japanese-radicals-font
+ttf-jetbrains-mono
+nerd-fonts-jetbrains-mono
+ttf-material-icons-git
+ttf-material-design-icons-extended
+adobe-source-code-pro-fonts
+ttf-font-awesome
+ttf-fira-code
+
+# For py
+
+python-wxpython
+python-pip
+tk
+
+# Zsh
+yay -S zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
- 
+
+
 # Yay
 git clone https://aur.archlinux.org/yay.git && cd yay  && makepkg -si
 
@@ -19,9 +79,20 @@ yay -S mesa-utils
 
 yay -S mesa xf86-video-intel vulkan-intel
 
+# Dont need sudo [startx, reboot, poweroff, ...]
 yay -S lightdm lightdm-gtk-greeter
 
 sudo systemctl enable lightdm.service
+
+# Change avatar in lightdm
+yay -S accountsservice
+sudo chmod 755 -R /var/lib/AccountsService
+
+sudo chmod 777 /Path/to/Img
+sudo cp -v /Path/to/Img /var/lib/AccountsService/icons/.png
+
+sudo nvim  /var/lib/AccountsService/users/user
+Change: Icon=/var/lib/AccountsService/icons/.png
 
 # Battery
 yay -S xfce4-power-manager
@@ -44,15 +115,47 @@ yay -S i3-gaps
 # bar
 
 yay -S polybar
+yay -S eww
+
+# or using eww
+# eww 
+git clone https://github.com/elkowar/eww && cd eww  && cargo build --release && cd target/release && chmod +x ./eww && ./eww daemon && ./eww open dashboard
 
 # Dot 
 git clone https://github.com/SunoBB/dot
 git clone https://github.com/porudev/rofi-nord
 
+# For nvim / vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-# eww 
-git clone https://github.com/elkowar/eww && cd eww  && cargo build --release && cd target/release && chmod +x ./eww && ./eww daemon && ./eww open dashboard
+# For mouse
+
+
+# for Blue-tooth
+sudo pacman -S bluez bluez-utils bluman
+
+bluetoothctl
+
+power on
+
+agent on
+default-agent 
+
+scan on
+
+devices 
+
+trust [IP]
+pair  [IP]
+connect [IP]
+
+scan off
+
+
+sudo nvim /etc/bluetooth/main.conf 
+Change
+AutoEnable=True
+# 
 
 
 sudo systemctl enable betterlockscreen@$user

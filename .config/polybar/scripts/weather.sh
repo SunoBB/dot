@@ -1,6 +1,6 @@
 #! /bin/sh
 
-city="Xã+Tân+Hưng" # Your city here
+city="" # Your city here
 city_cryptic=$(echo $city | sed -e 's/ /_/g')
 
 #condition="$(curl wttr.in/$city_cryptic?format='%c' --silent)"
