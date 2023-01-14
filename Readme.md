@@ -18,7 +18,7 @@
 ![Preview image](background/preview/_029.jpg)
  
  ## 🎉 CREDITS
- - ### MainColor :`tokyo night`
+ * ### MainColor :`tokyo night` 
  - [Boku](https://github.com/Spaxly/BSPWM-Config) - Bar
  - [Catppuccin](https://github.com/catppuccin) - Mouse, kitty
  - [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) - Thunar
