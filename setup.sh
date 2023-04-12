@@ -9,6 +9,9 @@ thunar
 feh
 rofi
 neovim
+gvfs 
+thunar-volman
+openasar-git
 
 # App
 visual-studio-code-bin

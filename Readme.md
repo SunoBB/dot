@@ -24,7 +24,7 @@
  - [Fausto-Korpsvart](https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme) - Thunar
  - [craftzdog](https://github.com/craftzdog) - tmux, neovim
  - [jiro](https://codeberg.org/zirodev) - ncmpcpp, mpd and more
- - [Vnpower](https://codeberg.org/vnpower) - More file shell
+ - [VnPower](https://codeberg.org/vnpower) - More file shell
  - [porudev](https://github.com/porudev) - I admired him
 
 
