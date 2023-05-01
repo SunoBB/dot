@@ -23,7 +23,7 @@ wps-office
 brightness-controller-git
 discord
 
-# Unzip file
+# Zip/Unzip file
 zip
 bzip2
 
