@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#!/bin/bash
+
 # Terminate already running bar instances
 killall -q polybar
 
@@ -11,6 +13,10 @@ for i in /sys/class/hwmon/hwmon*/temp*_input; do
         export HWMON_PATH="$i"
     fi
 done
+
+# for m in $(polybar --list-monitors | cut -d":" -f1); do
+#     MONITOR=$m polybar --reload now-playing &
+# done
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
     MONITOR=$m polybar --reload mainbar &

@@ -154,6 +154,14 @@ _G.packer_plugins = {
     path = "/home/suno/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
+  ["nvim-ibus-sw"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fibus-sw\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/suno/.local/share/nvim/site/pack/packer/opt/nvim-ibus-sw",
+    url = "https://github.com/kevinhwang91/nvim-ibus-sw"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/suno/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -222,6 +230,13 @@ time([[Defining packer_plugins]], false)
 time([[Config for presence.nvim]], true)
 require('presence-config')
 time([[Config for presence.nvim]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'nvim-ibus-sw'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

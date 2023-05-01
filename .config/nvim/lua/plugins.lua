@@ -15,7 +15,7 @@ packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
   use 'kyazdani42/nvim-web-devicons' -- File icons
-  use 'neovim/nvim-lspconfig' -- LSP
+  use 'neovim/nvim-lspconfig'
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -46,5 +46,10 @@ packer.startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
-  use 'akinsho/toggleterm.nvim'
+  use { 'akinsho/toggleterm.nvim' }
+  use { 'kevinhwang91/nvim-ibus-sw', event = 'InsertEnter',
+    config = function()
+      require('ibus-sw').setup()
+    end
+  }
 end)

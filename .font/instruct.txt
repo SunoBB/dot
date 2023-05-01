@@ -1,0 +1,4 @@
+step1: move folder into /usr/share/fonts
+step2: run in terminal `chown -R $USER $HOME`
+
+- final - 

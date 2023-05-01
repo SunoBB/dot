@@ -1,0 +1,7 @@
+-- -- Sử dụng kevinhwang91/nvim-ibus-sw cho tiếng Việt
+-- if vim.fn.executable('ibus-daemon') == 1 and vim.fn.exists(':IBusActivate') == 2 and vim.fn.exists(':IBusDeactivate') == 2 then
+--     vim.g.ibus_sw_keyboard_layouts = {'us', 'vi'}
+--     vim.g.ibus_sw_typing_boost = 0
+--     vim.cmd('autocmd InsertEnter * :call IBusActivate()')
+--     vim.cmd('autocmd InsertLeave * :call IBusDeactivate()')
+--   end

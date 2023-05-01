@@ -1,6 +1,6 @@
 #! /bin/sh
 
-city="Xã+Tân+Hưng" # Your city here
+city="" # Your city here
 city_cryptic=$(echo $city | sed -e 's/ /_/g')
 
 #condition="$(curl wttr.in/$city_cryptic?format='%c' --silent)"
@@ -12,7 +12,7 @@ format="$(curl wttr.in/$city_cryptic?format='%c%t' --silent)"
 if [ "$(echo $format | grep 'Unknown')" = "" ];
 then 
   #echo "$condition$text_condition | $temperature"
-  echo "$format" | sed -e 's/  //g' | sed -e 's/+//g'
+  echo "$format" | sed -e 's/  / /g'
 else
-  echo "摒 0°C"
+  echo "摒  0°C"
 fi

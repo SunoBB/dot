@@ -1,4 +1,6 @@
 
+git clone https://github.com/SunoBB/dot
+
 
 # Git
 git
@@ -64,8 +66,15 @@ tk
 
 # Zsh
 yay -S zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+zinit self-update
+exec zsh
+# Package for zsh:
+yay -S fzf exa
 
+# add themes
+# in dot/.config/zsh
 
 # Yay
 git clone https://aur.archlinux.org/yay.git && cd yay  && makepkg -si
