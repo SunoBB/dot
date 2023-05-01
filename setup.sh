@@ -173,3 +173,4 @@ AutoEnable=True
 sudo systemctl enable betterlockscreen@$user
 sudo chown -R $USER $HOME
 
+
