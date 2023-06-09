@@ -22,6 +22,7 @@ flameshot
 wps-office
 brightness-controller-git
 discord
+# https://aur.archlinux.org/packages/redact-bin : tool delete
 
 # Zip/Unzip file
 zip
