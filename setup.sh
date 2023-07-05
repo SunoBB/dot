@@ -16,7 +16,7 @@ echo -e "[${Red}*${Whi}] Updating system.."
 sudo pacman -Syu --noconfirm
 
 # Install git
-sudo pacman -S --noconfirm git
+sudo pacman -S --noconfirm --needed git
 
 echo -e "[${Red}*${Whi}] Cloning dotfiles"
 mkdir ~/GitGit
