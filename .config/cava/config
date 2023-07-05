@@ -113,7 +113,7 @@
 
 
 image_source=
-image_source="/home/suno/dot/.config/.config/neofetch/ascii/moon.txt"
+image_source="~/.config/neofetch/ascii/moon.txt"
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
