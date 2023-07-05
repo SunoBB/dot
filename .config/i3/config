@@ -402,7 +402,7 @@ for_window [class="Steam"] move to workspace $ws10
 
 
 # Window Compositor
-exec_always picom -f
+exec_always picom --config ~/.config/i3/picom/picom.conf
 
 
 # change light up (down)
