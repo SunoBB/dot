@@ -20,8 +20,7 @@ sudo pacman -S --noconfirm --needed git
 
 echo -e "[${Red}*${Whi}] Cloning dotfiles"
 mkdir ~/GitGit
-cd GitGit
-git clone https://github.com/jaseg/lolcat.git\ncd lolcat\nmake && sudo make install
+cd ~/GitGit
 git clone https://github.com/SunoBB/dot
 git clone https://github.com/poyrudev/rofi-nord
 cd
