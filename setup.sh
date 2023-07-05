@@ -291,12 +291,14 @@ printf "%s%sDone!%s\n\n" "${BLD}" "${CGR}" "${CNC}"
 sleep 1
 clear
 
-# Changing shell to fish and goodbye
-logo "Changing default shell to zsh"
-printf "%s%sIf your shell is not zsh will be changed now.\nYour root password is needed to make the change.\n\nAfter that is important for you to reboot.\n %s\n" "${BLD}" "${CYE}" "${CNC}"
-if [[ $SHELL != "/usr/bin/zsh" ]]; then
-	echo "Changing shell to zsh, your root pass is needed."
-	chsh -s /usr/bin/zsh
-else
-	printf "%s%sYour shell is already zsh\nGood bye! installation finished, now reboot%s\n" "${BLD}" "${CGR}" "${CNC}"
-fi
+yay -S --noconfirm pipewire pipewire-pulse helvum pavucontrol pipewire-alsa 
+systemctl --user enable pipewire pipewire-pulse
+systemctl --user start pipewire pipewire-pulse
+
+
+
+
+# Reupdate
+yay -Syu
+sudo chown -R $USER $HOME
+
