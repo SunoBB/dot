@@ -362,7 +362,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # strip_workspace_numbers là có để xóa số workspace không?
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/dot/background/wallpapers/ibm.jpg
+exec_always feh --bg-fill ~/background/wallpapers/ibm.jpg
 
 
 # auto open xfce4-power-manager 
@@ -427,11 +427,11 @@ exec_always teamviewer --daemon start
 bindsym $mod+g exec pkill polybar
 bindsym $mod+y exec polybar --reload main
 bindsym $mod+p exec scrot -d 3 /home/suno/Img_Cp/ 
-bindsym $mod+Shift+b exec ~/rofi-nord/backlight.sh
+bindsym $mod+Shift+b exec ~/.config/rofi-nord/backlight.sh
 
-# bindsym $mod+shift+x exec ~/rofi-nord/powermenu.sh
+# bindsym $mod+shift+x exec ~/.config/rofi-nord/powermenu.sh
 
-bindsym $mod+shift+a exec ~/rofi-nord/volume.sh
+bindsym $mod+shift+a exec ~/.config/rofi-nord/volume.sh
 
 #Move tab
 bindsym $mod+Tab workspace next
@@ -440,7 +440,7 @@ bindsym $mod+Shift+Tab workspace prev
 # Use Gui
 # bindsym $mod+p exec flameshot gui
 bindsym Print exec flameshot gui
-bindsym Scroll_Lock exec ~/rofi-nord/powermenu.sh
+bindsym Scroll_Lock exec ~/.config/rofi-nord/powermenu.sh
 
 exec --no-startup-id  ~/eww/target/release/eww daemon
 bindsym $mod+shift+d exec eww open dashboard                                                                          
