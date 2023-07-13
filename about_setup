@@ -6,6 +6,14 @@ git clone https://github.com/SunoBB/dot
 git
 github-desktop-bin
 
+# lf 
+lf
+ImageMagick
+ImageMagick
+poppler
+# epub-thumbnailer-git
+# wkhtmltopdf
+
 # 
 thunar
 feh
