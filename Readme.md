@@ -16,6 +16,27 @@
 ![Preview image](background/preview/_028.jpg)
 ![Preview image](background/preview/_027.jpg)
 ![Preview image](background/preview/_029.jpg)
+
+## INSTALLATION
+- Install Git
+```
+sudo pacman -S git
+```
+
+- Clone this repo
+```
+git clone https://github.com/SunoBB/dot
+```
+
+- Go to dotfiles directory
+```
+cd dot
+```
+
+- Run the script
+```
+sh setup.sh
+```
  
  ## 🎉 CREDITS
  * ### MainColor :`tokyo night` 
