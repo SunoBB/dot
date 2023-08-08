@@ -362,7 +362,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # strip_workspace_numbers là có để xóa số workspace không?
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/background/wallpapers/ibm.jpg
+exec_always feh --bg-fill --randomize ~/background/wallpapers/
 
 
 # auto open xfce4-power-manager 
