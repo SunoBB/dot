@@ -180,6 +180,16 @@ AutoEnable=True
 # 
 
 
+
+# Install Lotion
+Github.com/puneetsl/lotion
+
+# Remove cache
+Cài pacman-contrib rồi sudo paccache -rk0
+Để xoá sạch cache
+Và cuối cùng là làm 1 phát yay -c
+
+
 sudo systemctl enable betterlockscreen@$user
 sudo chown -R $USER $HOME
 

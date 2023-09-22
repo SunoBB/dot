@@ -4,9 +4,6 @@ local default_plugins = {
 
   "nvim-lua/plenary.nvim",
 
-  -- nvchad plugins
-  { "NvChad/extensions", branch = "v2.0" },
-
   {
     "NvChad/base46",
     branch = "v2.0",
@@ -19,9 +16,6 @@ local default_plugins = {
     "NvChad/ui",
     branch = "v2.0",
     lazy = false,
-    config = function()
-      require "nvchad_ui"
-    end,
   },
 
   {
@@ -53,7 +47,7 @@ local default_plugins = {
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
-      return { override = require("nvchad_ui.icons").devicons }
+      return { override = require "nvchad.icons.devicons" }
     end,
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "devicons")
@@ -63,6 +57,7 @@ local default_plugins = {
 
   {
     "lukas-reineke/indent-blankline.nvim",
+    version = "2.20.7",
     init = function()
       require("core.utils").lazy_load "indent-blankline.nvim"
     end,
@@ -229,7 +224,6 @@ local default_plugins = {
     config = function(_, opts)
       dofile(vim.g.base46_cache .. "nvimtree")
       require("nvim-tree").setup(opts)
-      vim.g.nvimtree_side = opts.view.side
     end,
   },
 
