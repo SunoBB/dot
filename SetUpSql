@@ -13,7 +13,7 @@ mairadb [(none)]:- CREATE DATABASE SW;
          
                 On 'SW' --- "write your database name"
 
-mairadb [(none)]:- CREATE USER 'suno'@'localhost' IDENTIFIED BY '22122005';
+mairadb [(none)]:- CREATE USER 'suno'@'localhost' IDENTIFIED BY 'db_pasword';
  
         On 'username' --- "write your username"
         
