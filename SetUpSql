@@ -1,0 +1,28 @@
+sudo pacman -S mariadb
+sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+sudo systemctl enable mariadb.service
+sudo systemctl start mariadb.service
+
+sudo mysql_secure_installation
+
+./ reboot system
+sudo mysql -u root -p
+
+mairadb [(none)]:- CREATE DATABASE SW;
+         
+                On 'SW' --- "write your database name"
+
+mairadb [(none)]:- CREATE USER 'suno'@'localhost' IDENTIFIED BY '22122005';
+ 
+        On 'username' --- "write your username"
+        
+        On 'some_pass' --- "write your password"
+
+MariaDB [(none)]:- GRANT ALL PRIVILEGES ON *.* TO 'suno'@'localhost';
+
+flush privileges;
+
+quit
+
+mysql -u suno -p db_pasword < /home/suno/Downloads/SQL/SQL.sql
