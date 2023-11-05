@@ -26,3 +26,17 @@ flush privileges;
 quit
 
 mysql -u suno -p db_pasword < /home/suno/Downloads/SQL/SQL.sql
+
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> create user 'Su'@'localhost' identified by 'pass';
+Query OK, 0 rows affected (0.022 sec)
+
+MariaDB [(none)]> grant all privileges on *.* to 'Su'@'localhost';
+Query OK, 0 rows affected (0.015 sec)
+
+MariaDB [(none)]> exit;
+Bye
