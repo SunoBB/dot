@@ -76,7 +76,7 @@ bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+#bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
@@ -343,7 +343,8 @@ client.urgent           #BF616A #BF616A #ffffff #BF616A
 #             binding_mode       #192F3B #3fd1c4    #192F3B
 #         }
 # }
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
 # statusline là màu chữ
@@ -362,7 +363,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # strip_workspace_numbers là có để xóa số workspace không?
 
 # Display Wallpaper
-exec_always feh --bg-fill ~/background/wallpapers/ibm.jpg
+exec_always feh --bg-fill ~/dot/background/wallpapers/0106.png
 
 
 # auto open xfce4-power-manager 
@@ -373,8 +374,10 @@ exec_always xfce4-power-manager
 # Assign Programs to Workspace
 for_window [class="kitty"] move to workspace $ws1
 
-for_window [class="Chromium"] move to workspace $ws2
 
+for_window [class="Brave-browser"] move to workspace $ws2
+
+for_window [class="Chromium"] move to workspace $ws3
 for_window [class="Thunar"] move to workspace $ws3
 
 for_window [class="GitHub Desktop"] move to workspace $ws4
@@ -418,14 +421,13 @@ exec_always picom -f
 bindsym $mod+t exec chromium
 
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+bindsym $mod+shift+y exec sh /home/suno/Github/Linux-Suno/scriptforpolybar.sh
 
 exec_always teamviewer --daemon start
 # exec_always chromium
 # exec_always discord
 # exec_always code
 
-bindsym $mod+g exec pkill polybar
-bindsym $mod+y exec polybar --reload main
 bindsym $mod+p exec scrot -d 3 /home/suno/Img_Cp/ 
 bindsym $mod+Shift+b exec ~/.config/rofi-nord/backlight.sh
 
@@ -443,5 +445,9 @@ bindsym Print exec flameshot gui
 bindsym Scroll_Lock exec ~/.config/rofi-nord/powermenu.sh
 
 exec --no-startup-id  ~/eww/target/release/eww daemon
+exec --no-startup-id teamviewer --daemon start
+
 bindsym $mod+shift+d exec eww open dashboard                                                                          
-bindsym $mod+shift+z exec eww close-all                                                                               
+bindsym $mod+shift+z exec eww close-all                                     
+bindsym $mod+shift+l exec systemctl suspend && betterlockscreen -l dimblur
+bindsym $mod+shift+s exec flameshot gui

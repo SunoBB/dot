@@ -72,7 +72,7 @@ clear
 # Install packages
 logo "Installing needed packages"
 
-dependencies=(git github-desktop-bin zsh thunar feh rofi neovim gvfs thunar-volman visual-studio-code-bin brave-bin flameshot brightness-controller-git discord zip bzip2 lxappearance gotop htop ncmpcpp mpd figlet ranger playerctl tty-clock i3status picom-pijulius-git fzf exa i3-gaps polybar ibus ibus-bamboo xfce4-power-manager bluez bluez-utils bluman betterlockscreen ytdownloader-gui ttf-jetbrains-mono-nerd)
+dependencies=(git github-desktop-bin zsh thunar feh rofi neovim gvfs thunar-volman visual-studio-code-bin brave-bin flameshot brightness-controller-git discord zip bzip2 lxappearance gotop htop ncmpcpp mpd figlet ranger playerctl fzf exa i3-gaps polybar ibus ibus-bamboo xfce4-power-manager bluez bluez-utils bluman betterlockscreen ytdownloader-gui ttf-jetbrains-mono-nerd)
 
 is_installed() {
 	pacman -Qi "$1" &>/dev/null
