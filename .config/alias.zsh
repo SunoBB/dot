@@ -104,6 +104,6 @@ alias clock="tty-clock -c -s -C 4"
 alias list_font="pango-list"
 alias hdmi="xrandr --output HDMI1 --mode 1920x1080 --pos 0x0"
 alias web="python -m http.server 8800"
-python -u "/home/suno/Caculator/Date/Check_date.py"
+# python -u "/home/suno/Caculator/Date/Check_date.py"
 
 # vim:ft=zsh
